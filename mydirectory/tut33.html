@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after psuedo selector</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+        header::before{
+            background: url('https://images.unsplash.com/photo-1681142990331-e1e84aac661f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        section{
+            height: 344px;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        h2{
+            color: black;
+        }
+        p{
+            text-align: center;
+        }
+        /* section::before{
+            content: "This is content";
+        }
+        section::after{
+            content: "This is content";
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>Welcome to coding world</h1>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ab! Minus odio nisi eveniet ea sequi earum non quisquam esse fugit facere numquam nesciunt fugiat vitae illo quaerat distinctio, dolorum beatae consectetur cum excepturi hic ipsam ipsa laudantium. Fuga voluptates molestiae temporibus, sit fugiat ratione laboriosam eius quod illum ipsam praesentium libero fugit cumque iure aperiam itaque expedita ex tempore minus molestias nulla rerum. Libero facilis est quis distinctio harum, ex voluptatibus corrupti quas quos cumque ad placeat impedit recusandae laboriosam, nisi maxime quia tempora? Fugiat eaque doloremque sint ut consectetur modi, blanditiis illum asperiores voluptatibus vel? Neque, ducimus deserunt?</P>
+            <h2>Coding is easy!</h2>
+        </section>
+</body>
+</html>
